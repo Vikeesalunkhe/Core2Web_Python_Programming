@@ -8,7 +8,6 @@
 num = int(input("Enter value of num : "))
 
 if (num > 10):
-
     print("yes {} is Greater than 10".format(num))
 
 else:

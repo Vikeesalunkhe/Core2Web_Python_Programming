@@ -8,11 +8,9 @@ num1 = int(input("Enter Value of num1 : "))
 num2 = int(input("Enter value of num2 : "))
 
 if (num1 > num2):
-
     print("{} is Max number between {} and {}".format(num1,num1,num2))
 
 else:
-
     print("{} is max number between {} and {}".format(num2,num1,num2))
 
 

@@ -5,15 +5,11 @@
 
 num = int(input("Enter value of num : "))
 
-
 if (num > 0):
-
     print("%d is the positive number"%num)
 
 elif (num < 0):
-
     print("%d is the negative number"%num)
 
 else:
-
     print("num is equal to zero")

@@ -7,9 +7,7 @@ num = int(input("Enter value of num : "))
 
 
 if (num % 2 == 0):
-
     print("{} is an Even Number".format(num))
 
 else:
-
     print("{} is an Odd number".format(num))
