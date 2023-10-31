@@ -19,7 +19,7 @@ angle2 = float(input("Enter Value of angle2 : "))
 angle3 = float(input("Enter value of angle3 : "))
 
 if (angle1 == 90) and (angle1 == 90) and (angle3 == 90):
-    print("It is a right angle tringle")
+    print("It is a not right angle triangle")
 
 else:
-    print("It is a not right angle triangle")
+    print("It is a right angle triangle")
