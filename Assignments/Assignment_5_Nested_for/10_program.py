@@ -12,7 +12,7 @@ row = int(input("Enter the row value : "))
 for i in range(1,15,4):
     num = i
     for j in range(row):
-        print(num, end = " ")
+        print(num, end = "\t ")
         num += 2
 
     print()

@@ -9,7 +9,7 @@ def fun(x):
     num = 1
     for i in range(x):
         for i in range(x):
-            print(num,end = "  ")
+            print(num,end = "\t  ")
             num = num + 1
 
         print()

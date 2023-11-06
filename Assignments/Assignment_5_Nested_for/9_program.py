@@ -13,7 +13,7 @@ for i in range(1,6,2):
     num = i
     
     for j in range(row):
-        print(num,end = " ")
+        print(num,end = "\t ")
         num += 2
     
     print()
