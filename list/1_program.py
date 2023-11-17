@@ -80,7 +80,7 @@ player = ["Rohit","Shubman","Virat","Shreyas","KlRahul"]
 print(player[0])                                                                #Rohit
 print(player[2])                                                                #Virat
 print(player[4])                                                                #KlRahul
-print(player[5])                                                                #Error : list index out of list
+#print(player[5])                                                                #Error : list index out of list
 
 print(player[-1])                                                               #KlRahul
 print(player[-3])                                                               #Virat
@@ -95,10 +95,66 @@ print(player[ : :3])                                                            
 print(player[4:2:2])                                                            #[]
 print(player[4:2:-1])                                                           #['klRahul','Shreyas']
 
+print(player[-1:-5: ])                                                          #[]
+print(player[-2:-4:-2])                                                         #['Shreyas']
+print(player[-1: : -1])                                                         #['KlRahul','Shreyas','Virat','Shubman','Rohit']
 
 
+##################################################################
+#Methods from list
+##access
+#1.append
+#2.extend
+#3.insert
 
+player = ["Rohit","Shubman","Virat","Shreyas","KlRahul"]
 
+player.append("SKY")                                                           #.append : add single element in last index of list
+print(player)                                                                  #['Rohit','Shubman','Virat','Shreyas','KlRahul','SKY']
+
+player.extend(["Jagu","Mahi"])                                                 #.extend : add multiple data in last indexcess
+print(player)                                                                  #['Rohit','Shubman','Virat','Shreyas','KlRahul','SKY','jagu','Mahi']
+
+player.insert(3,"Hardik")                                                       #.index : replace single element in given index no.
+print(player)                                                                  #['Rohit','Shubman','Virat','Hardik','KlRahul','SKY','jagu','Mahi']
+
+#########
+
+##Delet
+#1.remove
+#2.pop
+#3.clear
+
+player.remove("SKY")                                                        #.remove : remove or delet given element
+print(player)                                                               #['Rohit', 'Shubman', 'Virat', 'Hardik', 'Shreyas', 'KlRahul', 'Jagu', 'Mahi']
+
+player.pop()                                                                #.pop : remeove or delet last index element in list
+print(player)                                                               #['Rohit', 'Shubman', 'Virat', 'Hardik', 'Shreyas', 'KlRahul', 'Jagu']
+
+player.clear()                                                              #.clear : clear all list or empty list
+print(player)                                                               #[]
+
+########
+
+#1.count()
+#2.index()
+#3.reverse()
+#4.sort
+#5.copy
+
+player1 = ["Rohit","Shubman","Virat","Shreyas","KlRahul"]
+
+newList = player1.copy()                                                    #copy the same list as player1 to newList
+print(newList)                                                              #['Rohit', 'Shubman', 'Virat', 'Shreyas', 'KlRahul']
+print(player1)                                                               #['Rohit', 'Shubman', 'Virat', 'Shreyas', 'KlRahul']
+
+print(player1.index("Virat"))                                                #2  : gives index no. of element
+
+print(player1.reverse())                                                     
+
+print(player1.sort())                                                        #sort alphabetically
+
+print(player1.count("Virat"))                                                #1  : count total no. of given element 
 
 
 
