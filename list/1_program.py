@@ -3,8 +3,12 @@
 #3.Mutable
 #4.indexing
 #5.Growable
+#6.denoted by []
 
 #list literals
+
+List = []
+print(type(List))                                                                 #<class 'list'>
 
 batman = ["Rohit","Shubman","Virat","KLRahul"]
 print(batman)                                                                     #['Rohit', 'Shubman', 'Virat', 'KLRahul']
@@ -156,12 +160,53 @@ print(player1.sort())                                                        #so
 
 print(player1.count("Virat"))                                                #1  : count total no. of given element 
 
+#################################################################
+#Nested List
+
+lang = ["Cpp","Java","Python",["Go","Rust",'Dart']]
+
+print(lang[1])                                                                #'Java'
+print(lang[3])                                                                #['Go','Rust','Dart']
+print(lang[3][1])                                                             #'Rust'
+
+##################################################################
+
+#Deepcopy and Shollow copy
+
+#shallow copy
 
 
+lang = ["Cpp","Java","Python",["Go","Rust",'Dart']]
 
+newlist = lang.copy()                                                        #:shallowcopy support only nested list or tuple or dict or set
+print(lang)                                                                  #["Cpp","Java","Python",["Go","Rust",'Dart']]
+print(newlist)                                                               #["Cpp","Java","Python",["Go","Rust",'Dart']]
 
+print((id(lang)) == (id(newlist)))                                           #False
 
+lang[3][1] = "JavaScript"
+print(lang)                                                                  #['Cpp','Java','Python',['Go',"JavaScript",'Dart']]
+print(newlist)                                                               #['Cpp','Java','Python',['Go','JavaScript','Dart']]
 
+#################
+#Deepcopy
+
+lang = ["Cpp","Java","Python",["Go","Rust",'Dart']]
+
+import copy as cp
+
+NewList = cp.deepcopy(lang)
+
+print(lang)                                                                 #lang = ["Cpp","Java","Python",["Go","Rust",'Dart']]
+print(NewList)                                                              #lang = ["Cpp","Java","Python",["Go","Rust",'Dart']]
+
+print(id(lang) == id(NewList))                                              #False
+
+lang[3][1] = "JavaScript"
+print(lang)                                                                 #lang = ["Cpp","Java","Python",["Go",'JavaScript','Dart']]
+print(NewList)                                                              #lang = ["Cpp","Java","Python",["Go","Rust",'Dart']]
+
+####################################################################
 
 
 
