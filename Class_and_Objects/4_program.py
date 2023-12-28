@@ -15,5 +15,4 @@ obj.disp()
 """O/p In Constructor
        10
        20
-
 """
