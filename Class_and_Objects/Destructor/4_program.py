@@ -1,7 +1,7 @@
 class Parent:
 
     def __init__(self):
-        print("Parent Constructor")
+        print("In Parent Constructor")
         self.x = 10
         self.y = 20
 
@@ -12,10 +12,10 @@ class Parent:
 class Child(Parent):
 
     def __init__(self):
-        print("In Child Constructor")
+        print("In Child Parent")
+        super().__init__()
         self.x = 30
         self.y = 40
-        super().__init__()
 
 
 obj = Child()
@@ -23,8 +23,8 @@ obj.disParent()
 
 
 """
-O/p In Child Constructor
-    Parent Constructor
-    10
-    20
+O/p In Child Parent
+    In Parent Constructor
+    30
+    40
 """
