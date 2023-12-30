@@ -22,9 +22,13 @@ obj = Child()
 obj.disParent()
 
 
+
+
 """
 O/p In Child Parent
     In Parent Constructor
     30
     40
 """
+
+
