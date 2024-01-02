@@ -5,11 +5,11 @@ A B C D
 A B C D
 A B C D
 """
+rows = int(input("Enter Value of rows no. : "))
 
-
-for i in range(4):
+for i in range(rows):
     num = 65
-    for j in range(4):
+    for j in range(rows):
         print(chr(num),end = " ")
         num+=1
 
