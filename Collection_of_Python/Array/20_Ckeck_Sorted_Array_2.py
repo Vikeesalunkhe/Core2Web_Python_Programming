@@ -10,6 +10,7 @@ def Sorted(ln,arr):
         else:
             return False
         i+=1
+    return True
 
 arr = array.array('i',[1,3,3,4,6,7,8])
 ln = len(arr)
