@@ -13,30 +13,44 @@ Num = 141
 Output: True
 '''
 
-def Parent():
+def Parent(Data, searNo, Num, Choise):
 
-    def myIndex(Data,No):
+    def myIndex(Data,searNo):
         count = 0
         for i in Data:
-            if i == No:
+            if i == searNo:
                 count+=1
 
-        print(count)
+        print(count) 
 
     def myPalidrome(num):
 
+        num1 = num
         Pali = 0
         while 0<num:
             rem = num%10
-            pali = pali*20+rem
+            Pali = Pali*10+rem
             num = num//10
-        if pali == num:
+        if Pali == num1:
             print("True")
+        else:
+            print("False")
 
+    if Choise == 1:
+        myIndex(Data, searNo)
+
+    if Choise == 2:
+        myPalidrome(Num)
+    
 listData = [1,2,3,4,5,6]
+searNo = 2
 
 user = int(input("Enter user Choice No. : "))
+Num = 1134311
+Parent(listData,searNo, Num, user)
 
+
+'''
 if user == 1:
 
     serarNo = 2
@@ -46,6 +60,8 @@ if user == 1:
 if user == 2:
 
     Num = 141
-    ret = parent()
-    ret(Num)
+    retObj = Parent()
+    retObj(Num)
+    
+'''
 
