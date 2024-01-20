@@ -17,7 +17,7 @@ def Total(List, Ele):
 
     return count
 
-SerEl = 3
+SerEl = int(input("Enter value of Search Element :  "))
 listData = [1,2,3,3,4,5,3]
 retObj = Total(listData, SerEl)
 print(f"{SerEl} found in list {retObj} time ")
